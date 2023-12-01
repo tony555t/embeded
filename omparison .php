@@ -6,6 +6,17 @@
         <title>Document</title>
     </head>
     <body>
+        <?php
+        if(4==="4"|| 5<10)
+        //(4=== 4 && 5< 10)true 
+    // (4=== 4 || 5< 10)true 
+
+
+        {
+            echo "it is true";
+
+        }
+        ?>
         
     </body>
     </html>
