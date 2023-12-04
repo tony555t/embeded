@@ -13,10 +13,15 @@
 //}
 //greeting("hello student");
 
-function money($currency){
-    echo $currency;
+//function money($currency){
+  //  echo $currency;
+//}
+//money("shilings");
+function calulate($number1,$number2){
+    $sum=$number1+$number2;
+    echo $sum;
 }
-money("shilings");
+calulate(5,3);
 ?>
 
 
