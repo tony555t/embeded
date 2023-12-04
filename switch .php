@@ -7,19 +7,23 @@
 </head>
 <body>
     <?php
-    $number =4;
-    if($number <10){
-        echo 'this is good';
-    }
-    $number =4;
-    if($number <20){
-        echo 'this is better';
-    }
-    $number =4;
-    if($number <30){
-        echo 'this is best';
-    }
-
+   
+   $number=10;
+   switch($number){
+    case 45;
+    break;
+    echo "good";
+    break;
+    case 55;
+    echo "better";
+    break;
+    case 65;
+    echo "best";
+    break;
+    default:
+    echo"default case";
+   }
+   
 
     ?>
 
