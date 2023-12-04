@@ -7,10 +7,10 @@
 </head>
 <body>
     <?php
-    $counter =0;///to stop the loop
-    while ($counter <10){
+    $counter =0;/// start of  the loop
+    while ($counter <=10){
         echo "hello students";
-        //echo $counter; //show the number of times it iterated
+        echo $counter; //show the number of times it iterated
         //infinte loop
         //$counter = $counter +1;
         $counter++;//this is a shorthand way to increment by 1

@@ -27,6 +27,17 @@ else{
 }
 
 
+if(5<1){
+ echo "i love php";
+}elseif(20<90){
+    echo "i love java";
+
+
+}else{
+    echo "give me a new number";
+
+}
+
 ?>
     
 </body>
