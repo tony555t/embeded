@@ -40,7 +40,18 @@ $result=addNumber(45,90);
     }
 }
 $studentMarks =85;
-$grade = calculateGrade($studentMarks)
+$grade = calculateGrade($studentMarks);
+
+function calculateAverage($marksArray){
+    $totalMarks = array_sum($marksArray);
+    $numberOfMarks = count($marksArray);
+    if ($numberOfMarks >0 ){
+        $average = $totalMarks/$numberOfMarks ;
+        return $average;
+    }else{
+        return "no marks given yet";
+    }
+}
 ?>
 </body>
 </html>
