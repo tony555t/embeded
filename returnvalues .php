@@ -52,6 +52,64 @@ function calculateAverage($marksArray){
         return "no marks given yet";
     }
 }
+$studentsMarks=[78,90,90,76,59];
+$averageMarks =calculateAverage($studentsMarks);
+
+function determineSalaryCategory($salary){
+    if ($salary >= 100000){
+        return "high salary";
+         }elseif($salary >= 50000){
+            return "medium salary";
+         }elseif($salary >=20000){
+            return "low salary";
+         }else{
+            return "invalid salary range";
+         }
+         }
+$userSalary =75000;
+$salaryCategory =determineSalaryCategory($userSalary);
+
+
+function calculateRectangleArea($length,$width){
+    $area =$length * $width;
+    return $area;
+}
+$rectangleHeight=10;
+$rectangleWidth =5;
+
+$area=calculateRectangleArea($rectangleHeight,$rectangleWidth);
+echo "the area of the rectangle is :".$area;
+
+
+function checkVoterEligibility($age){
+    if ( $age>18 && $age<=35){
+        return "eligible to vote";
+}else{
+    return "not eligile to vote";
+}
+}
+$personAge=25;
+$voterStatus = checkVoterEligibility($personAge);
+
+echo "person is $personAge years old.$voterStatus";
+
+function checkmovieAvailable($userChoice,$availableMovie){
+
+    if (in_array($userChoice,$availableMovie)){
+        return "the movie '$userChoice'is available.";
+    }else{
+        return "sorry, the movie '$userChoice' is not available";
+    }
+    }
+$movies=['the martrics',"inception","avatar","titanic"];
+$userMovieChoices = "avatar";
+
+$availabilityStatus=checkmovieAvailable($userChoice,$movies);
+echo $availabilityStatus;
+
+
 ?>
+
+
 </body>
 </html>
