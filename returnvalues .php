@@ -107,7 +107,18 @@ $userMovieChoices = "avatar";
 $availabilityStatus=checkmovieAvailable($userChoice,$movies);
 echo $availabilityStatus;
 
+function checkProductAvailability($productId,$availableProductIds){
+    if (in_array($productId,$availableProductIds)){
+        return "product with ID $productId is available.";
 
+    }else{
+        return "Sorry! product with ID $productId is not available";
+    }
+} 
+$availableProducts=[456,987,123];
+$userProductId=123;
+$availabilityProductStatus=$checkProductAvailabili($userProductId,$availableProductIds);
+echo $availabilityProductStatus;
 ?>
 
 
