@@ -119,6 +119,21 @@ $availableProducts=[456,987,123];
 $userProductId=123;
 $availabilityProductStatus=$checkProductAvailabili($userProductId,$availableProductIds);
 echo $availabilityProductStatus;
+
+
+function checkVacancy($roomId,$availableroomsIds){
+    if(in_array($roomId,$availableroomsIds)){
+        return "$roomId room is vacant.";
+}else {
+    return "$roomId room is occupied.";
+}}
+$availableroom=[45,78,90,46];
+$userEnquiry=90;
+$availabilityroomStatus=$checkVacancy($userEnquiry,$availableroomsIds);
+echo $availabilityroomStatus;
+
+
+
 ?>
 
 
