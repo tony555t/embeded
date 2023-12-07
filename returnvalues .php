@@ -225,6 +225,17 @@ function dance ($music){
 $userMusic="clemo";
 $musicavailabletoDance=dance($userMusic,$musicavailabletoDance);
 echo $musicavailabletoDance;
+
+
+
+function wardVoting($age){
+    if($age>=18 && $age<=65){
+        return true;
+    }
+}
+$voterAge=47;
+$canVote=wardVoting($voterAge);
+echo $canVote;
 ?>
 
 
