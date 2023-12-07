@@ -182,6 +182,37 @@ function listenPodcast($views){
 $podCastViews=800;
 $listeningStatus=listenPodcast($podCastViews);
 echo $listeningStatus;
+
+
+function drink($alcohol){
+    if($alcohol=='gin'){
+        return "drink gin";
+}elseif($alcohol=='whisky'){
+    return "drink whisky";
+}elseif($alcohol=='whine'){
+    return "drink wine";
+}elseif($alcohol=="beer"){
+    return "drink beer";
+}else{
+    return "no alcohol allowed";
+}
+}
+$customerChoice='gin';
+$choiceToDrink=drink($customerChoice);
+
+function post($news){
+    if($news<200){
+        return "post";
+}elseif($news>200){
+    return "do not post";
+}else{
+    return "neutral";
+}
+}
+$newsPosting=300;
+$postStatus=post($newsPosting);
+echo $postStatus;
+
 ?>
 
 
