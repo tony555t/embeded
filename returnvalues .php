@@ -169,6 +169,19 @@ function recommendBooks($books){
         echo "<li>".$book."</li>";
 } 
 }
+
+function listenPodcast($views){
+    if($views<=1000){
+        return "half listen";
+    }elseif($views>=1500){
+        return "listen";
+   }else{
+    return "not interested in listening";
+   }
+}
+$podCastViews=800;
+$listeningStatus=listenPodcast($podCastViews);
+echo $listeningStatus;
 ?>
 
 
