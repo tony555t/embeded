@@ -145,6 +145,22 @@ $userCourse="computer science";
 $availablecourseStatus=$checkcourse($availablecourseIds,$userCourse);
 echo $availablecourseStatus;
 
+function recommendTransportMode($distance){
+    if($distance<=5){
+        return "walking";
+
+    }elseif($distance<=20){
+        return "public transit";
+
+    }elseif($distance<=100){
+        return "cycling";
+
+    }else{
+        return "car driving";
+    }
+}
+$travelDistance =90;
+$recommendedTravelMode=recommendTransportMode($travelDistance);
 ?>
 
 
