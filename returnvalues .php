@@ -236,6 +236,22 @@ function wardVoting($age){
 $voterAge=47;
 $canVote=wardVoting($voterAge);
 echo $canVote;
+
+function traficTicket($speedlimits){
+    if($speedlimits>90){
+        return 'give warning';
+}elseif($speedlimits >100){
+    return 'fine';
+}elseif($speedlimits>120){
+    return 'suspended license';
+}elseif($speedlimits>150){
+    return 'revoked license';
+}else{
+    return 'revoked licencse and arrest';
+}}
+$trafficSpeed=120;
+$traficResult=traficTicket($trafficSpeed);
+echo $traficResult;
 ?>
 
 
