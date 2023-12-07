@@ -132,7 +132,18 @@ $userEnquiry=90;
 $availabilityroomStatus=$checkVacancy($userEnquiry,$availableroomsIds);
 echo $availabilityroomStatus;
 
+function checkcourse($course1d,$availablecourseIds){
+    if (in_array($course1d,$availablecourseIds)){
+        return "$course1d course is available.";
 
+    }else{
+        return "Sorry! $course1d course is not available";
+    }
+
+}$availablecourse=['information tech','biotec','law', 'comp sci,'];
+$userCourse="computer science";
+$availablecourseStatus=$checkcourse($availablecourseIds,$userCourse);
+echo $availablecourseStatus;
 
 ?>
 
