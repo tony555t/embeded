@@ -161,6 +161,14 @@ function recommendTransportMode($distance){
 }
 $travelDistance =90;
 $recommendedTravelMode=recommendTransportMode($travelDistance);
+echo $recommendedTravelMode;
+
+
+function recommendBooks($books){
+    foreach ($books as $book) {
+        echo "<li>".$book."</li>";
+} 
+}
 ?>
 
 
