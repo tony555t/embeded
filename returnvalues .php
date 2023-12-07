@@ -252,6 +252,16 @@ function traficTicket($speedlimits){
 $trafficSpeed=120;
 $traficResult=traficTicket($trafficSpeed);
 echo $traficResult;
+
+define('MAX_OIL_PRICE_PER_LITER',223);
+function checkPriceForFuel($pricePerLiter){
+    $totalFuelCost=$distance * MAX_OIL_PRICE_PER_LITER;
+    return $totalFuelCost;
+}
+$distanceToTravel =100;
+$TotalCost=checkPriceForFuel($distanceToTravel);
+echo $TotalCost;
+
 ?>
 
 
