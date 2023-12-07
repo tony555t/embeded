@@ -213,6 +213,18 @@ $newsPosting=300;
 $postStatus=post($newsPosting);
 echo $postStatus;
 
+function dance ($music){
+    if ($music==='bensoul'){
+        return 'dance to benson soul music';
+    }elseif($music==='bien'){
+        return 'dance to bien music';
+    }else{
+        return 'no music for dancing';
+    }
+}
+$userMusic="clemo";
+$musicavailabletoDance=dance($userMusic,$musicavailabletoDance);
+echo $musicavailabletoDance;
 ?>
 
 
