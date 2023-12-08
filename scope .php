@@ -50,14 +50,22 @@
 //myTest();
 //echo $y;
 
-$globalvar="im a global variable";
-function accessGlobal(){
-    global $globalVar;
-    echo "<p>inside function:$globalVar</P>";
-}
-accessGlobal();
+//$globalvar="im a global variable";
+//function accessGlobal(){
+  //  global $globalVar;
+    //echo "<p>inside function:$globalVar</P>";
+//}
+//accessGlobal();
 
-echo "<p>outside function:$globalVar</p>";
+//echo "<p>outside function:$globalVar</p>";
+$x=5;
+$y=10;
+
+function myTest(){
+    $GLOBALS['y']=$GLOBALS['x'] + $GLOBALS['Y'];
+}
+myTest();
+echo$y;
     ?>                                          
 </body>
 </html>
