@@ -279,6 +279,27 @@ $teamPoints=55;
 $teamsfate=$premierpoints($teamPoints);
 echo $teamsfate;
 
+define ("MINIMUM_TAX_RATE" ,0,.09);
+function  calculateTax($income){
+        $tax=$income*MINIMUM_TAX_RATE;
+        return $tax;
+}
+$income=100000;
+$result=calculateTax($income);
+echo"tax for income $income is:$result";
+
+function purchasingPower($productPrice){
+    if ($productPrice>=1000){
+        return "buy";
+    }elseif($productPrice>=1000){
+        return "-is it urgent?";
+    }else{
+       return" wait think about it";
+    }
+}
+$productPrice=2000;
+$purchasingPowerResult=purchasingPower($productPrice);
+echo $purchasingPowerResult;
 
 
 ?>
