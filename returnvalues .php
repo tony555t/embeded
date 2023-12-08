@@ -298,7 +298,7 @@ function purchasingPower($productPrice){
     }
 }
 $productPrice=2000;
-$purchasingPowerResult=purchasingPower($productPrice);
+$purchasingPowerResult=$purchasingPower($productPrice);
 echo $purchasingPowerResult;
 
 
