@@ -254,13 +254,32 @@ $traficResult=traficTicket($trafficSpeed);
 echo $traficResult;
 
 define('MAX_OIL_PRICE_PER_LITER',223);
-function checkPriceForFuel($pricePerLiter){
-    $totalFuelCost=$distance * MAX_OIL_PRICE_PER_LITER;
+function checkPriceForFuel($distanceToTravel){
+    $totalFuelCost=$distanceToTravel * MAX_OIL_PRICE_PER_LITER;
     return $totalFuelCost;
 }
 $distanceToTravel =100;
 $TotalCost=checkPriceForFuel($distanceToTravel);
 echo $TotalCost;
+
+
+
+
+define ("PREMIERE_LEGUE_POINTS",50);
+//define ("SECOND_LEGUE_POINTS",30);
+function premierPoints($points){
+    if($points>=PREMIERE_LEGUE_POINTS){
+        return 'play in the epl next seasion';
+
+}else{
+    return 'play in the second leage';
+}
+}
+$teamPoints=55;
+$teamsfate=$premierpoints($teamPoints);
+echo $teamsfate;
+
+
 
 ?>
 
