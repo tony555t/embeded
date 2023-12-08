@@ -67,13 +67,55 @@
 //myTest();
 //echo $y;
 function myText(){
-    static $x =0;
+    static $x = 0;
     echo $x;
     $x++;
 }
-myTest();
-myTest();
-myTest();
-    ?>                                          
-</body>
-</html>
+myText();
+myText();
+myText();
+  
+
+function countcalls (){
+    static $count = 0;
+    $count++;
+    echo "function has been called $count times.<br> ";
+
+}
+countcalls();
+countcalls();
+
+function countvehicles(){
+    static $count = 0;
+    $count++;
+    echo "There are $count vehicles in the garage.<br>";
+}
+countvehicles();
+countvehicles();
+countvehicles();
+
+function countstudents(){
+    static $count = 0;
+    $count++;
+    echo "There are $count students in the classroom.<br>";
+}
+countstudents();
+countstudents();
+countstudents();
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
