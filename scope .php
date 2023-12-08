@@ -30,13 +30,25 @@
     
     
  //localscope
- function myTest() {
-    $x = 5;  // Local scope
-    echo "<p>Variable x inside function is: $x</p>";
-}
+ //function myTest() {
+  //  $x = 5;  // Local scope
+    //echo "<p>Variable x inside function is: $x</p>";
+//}
 
 // Call the function
+//myTest();
+
+//global keyword
+$x=5;
+$y-23;
+
+function myTest (){
+    global $x,$y;
+    $y=$x+$y;
+}
+
 myTest();
+echo $y;
     ?>                                          
 </body>
 </html>
