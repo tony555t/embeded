@@ -102,6 +102,16 @@ function countstudents(){
 countstudents();
 countstudents();
 countstudents();
+
+function farmCount(){
+    static $count = 0;
+    $count++;
+    echo "there are $count animal in laikipia farm";
+
+}
+farmCount();
+farmCount();
+farmCount();
 ?>
 
 
