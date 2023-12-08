@@ -39,16 +39,25 @@
 //myTest();
 
 //global keyword
-$x=5;
-$y-23;
+//$x=5;
+//$y-23;
 
-function myTest (){
+//function myTest (){
     global $x,$y;
     $y=$x+$y;
-}
+//}
 
-myTest();
-echo $y;
+//myTest();
+//echo $y;
+
+$globalvar="im a global variable";
+function accessGlobal(){
+    global $globalVar;
+    echo "<p>inside function:$globalVar</P>";
+}
+accessGlobal();
+
+echo "<p>outside function:$globalVar</p>";
     ?>                                          
 </body>
 </html>
