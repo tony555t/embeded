@@ -58,14 +58,22 @@
 //accessGlobal();
 
 //echo "<p>outside function:$globalVar</p>";
-$x=5;
-$y=10;
+//$x=5;
+//$y=10;
 
-function myTest(){
-    $GLOBALS['y']=$GLOBALS['x'] + $GLOBALS['Y'];
+//function myTest(){
+  //  $GLOBALS['y']=$GLOBALS['x'] + $GLOBALS['Y'];
+///}
+//myTest();
+//echo $y;
+function myText(){
+    static $x =0;
+    echo $x;
+    $x++;
 }
 myTest();
-echo$y;
+myTest();
+myTest();
     ?>                                          
 </body>
 </html>
