@@ -19,10 +19,12 @@
   $key = array_search(456, $list);
   $string="thfgdfivbvghdbfbvgf";
   $value=['sadfast',3456,'tegh',566789,$string];
-  $found =in_array ($string,$value);{
+  $found =in_array ($string,$value);
+  if($found){
     echo "wow we did it together";
   }else{
-    "we messed up";
+
+    echo"we messed up";
   }
 ?>
     
