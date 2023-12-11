@@ -26,6 +26,12 @@
 
     echo"we messed up";
   }
+$currency=["yen","usd","pound","ksh"];
+$country =["china","usa","uk","kenya"];
+$currencyCountry= array_combine($currency,$country);
+print_r($currencyCountry);
+
+
 ?>
     
 </body>
