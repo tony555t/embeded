@@ -12,6 +12,12 @@ echo pow (2,7);
 echo "<br>";
 rand(1,100);
 echo "<br>";
+echo sqrt(2000);
+echo "<br>";
+echo ceil(4.7);
+echo "<br>";
+echo floor(2.4);
+echo "<br>";
 ?>
     
 </body>
