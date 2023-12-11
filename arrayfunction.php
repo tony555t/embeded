@@ -7,8 +7,13 @@
 </head>
 <body>
     <?php
-  $list =[];
-
+  $list =[345,567,367,890,678];
+  echo max($list);
+  echo "<br>";
+  echo min($list);
+  echo "<br>";
+  sort ($list);
+  print_r($list);
 ?>
     
 </body>
