@@ -30,6 +30,16 @@ $currency=["yen","usd","pound","ksh"];
 $country =["china","usa","uk","kenya"];
 $currencyCountry= array_combine($currency,$country);
 print_r($currencyCountry);
+echo "<br>";
+
+
+$currenyMerge= array_merge($currency,$country);
+print_r($currenyMerge);
+echo "<br>";
+
+$person =["name"=>"john","age"=>40,"city"=>"newy0rk"];
+$value =array_values($person);
+print_r($value);
 
 
 ?>
