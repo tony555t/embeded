@@ -14,6 +14,16 @@
   echo "<br>";
   sort ($list);
   print_r($list);
+
+  $list =[455,789,908,456];
+  $key = array_search(456, $list);
+  $string="thfgdfivbvghdbfbvgf";
+  $value=['sadfast',3456,'tegh',566789,$string];
+  $found =in_array ($string,$value);{
+    echo "wow we did it together";
+  }else{
+    "we messed up";
+  }
 ?>
     
 </body>
