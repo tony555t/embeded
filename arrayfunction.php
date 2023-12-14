@@ -42,6 +42,14 @@ $value =array_values($person);
 print_r($value);
 
 
+$expensive=["plain","ship"];
+$cheap=["bike","bus","walking"];
+$transportation= array_merge($expensive,$cheap);
+print_r($transportation);
+echo "<br>";
+
+
+
 ?>
     
 </body>
