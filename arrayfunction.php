@@ -42,6 +42,15 @@ $value =array_values($person);
 print_r($value);
 
 
+$vitamins=["mango","bananas","apple"];
+$proteins=["beef","fish"."chicken"];
+$carbohydrates=["maize","casava","yams"];
+$mealPlan=array_combine($vitamins,$proteins,$carbohydrates);
+print_r($mealPlan);
+echo "<br>";
+
+
+
 $expensive=["plain","ship"];
 $cheap=["bike","bus","walking"];
 $transportation= array_merge($expensive,$cheap);
